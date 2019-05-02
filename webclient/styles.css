@@ -1,0 +1,11 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+.navbar {
+  display: block;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.navitem {
+  display: inherit;
+  font-family: 'Montserrat', sans-serif;
+}
