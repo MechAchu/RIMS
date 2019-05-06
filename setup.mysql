@@ -1,0 +1,27 @@
+USE rimsdev$inventory;
+
+CREATE TABLE `users` (
+	`userid` INT NOT NULL,
+	`firstname` TEXT CHARACTER SET ascii COLLATE ascii_general_ci,
+	`lastname` TEXT CHARACTER SET ascii COLLATE ascii_general_ci,
+	`grade` TINYINT,
+	PRIMARY KEY (`userid`)
+) ENGINE=InnoDB;
+
+CREATE TABLE `consumables` (
+	`itemid` INT zerofill NOT NULL AUTO_INCREMENT,
+	`itemname` TEXT CHARACTER SET ascii COLLATE ascii_general_ci,
+	`size` TEXT CHARACTER SET ascii COLLATE ascii_general_ci,
+	`location` TEXT CHARACTER SET ascii COLLATE ascii_general_ci DEFAULT NULL,
+	`quantity` INT,
+	KEY `supply` (`quantity`),
+	PRIMARY KEY (`itemid`)
+) ENGINE=InnoDB;
+
+CREATE TABLE `items` (
+   -> `itemid` INT zerofill NOT NULL AUTO_INCREMENT,
+   -> `itemname` TEXT CHARACTER SET ascii COLLATE ascii_general_ci,
+   -> `location` TEXT CHARACTER SET ascii COLLATE ascii_general_ci,
+   -> `borrow` INT DEFAULT NULL,
+   -> PRIMARY KEY (`itemid`)
+   -> ) ENGINE=InnoDB;
