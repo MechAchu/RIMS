@@ -1,11 +1,17 @@
+*{
+    font-family: 'Roboto Mono', monospace;
+    }
+
 body {
-  background: #fafafa;
-  color: #333333;
+    font-family: 'Roboto Mono', monospace;
+  background: #363434;
+  color: #ffffff;
   margin-top: 5rem;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #444444;
+  font-family: 'Roboto Mono', monospace;
+  color: #ffffff;
 }
 
 .bg-steel {
@@ -33,7 +39,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .article-title {
-  color: #444444;
+  color: #ffffff;
 }
 
 a.article-title:hover {
@@ -58,7 +64,7 @@ a.article-title:hover {
 }
 
 .article-metadata a:hover {
-  color: #333;
+  color: #ffffff;
   text-decoration: none;
 }
 
