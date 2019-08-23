@@ -1,0 +1,3 @@
+1. Track what resources go to which project
+2. Track how long projects take to complete
+3. 
